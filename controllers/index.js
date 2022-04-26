@@ -16,6 +16,7 @@ const sendMail = async (req, res) => {
         for (const key in details) {
             bag += (`${key}: ${details[key]} \n`);
         }
+        console.log(email);
         let mailDetails = {
             from: process.env.gmail,
             to: email,
