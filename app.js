@@ -8,7 +8,9 @@ app.use(cors())
 // app.options('*', cors())
 app.use(express.json())
 
-
+app.use("/test", (req, res) => {
+    res.send("Working!!!")
+})
 app.use('/', sendMail);
 
 
